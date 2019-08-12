@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Apex Stats</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container-fluid shadow-lg rounded">
+
+    <div class="jumbotron jumbotron-fluid mt-4 ">
+        <div class="form-group">
+            <label for="player">Pseudo</label>
+            <input type="text" class="form-control" id="player" placeholder="Pseudo">
+        </div>
+        <div class="form-group">
+            <label for="plateforme">Plateforme</label>
+            <select id="plateforme" name="plateforme" class="custom-select">
+                <option selected>Plateforme</option>
+                <option value="2">PSN</option>
+                <option value="1">XBOX</option>
+                <option value="5">PC</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit" name="submit" value="Valider">Submit</button>
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Avatar</th>
+                    <th>Username</th>
+                    <th>Level</th>
+                    <th>Country</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img id="avatar" src="" width="40px" height="40px"></td>
+                    <td id="name"></td>
+                    <td id="level"></td>
+                    <td id="country"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Kills</th>
+                    <th>Damage</th>
+                    <th>Headshots</th>
+                    <th>Revives</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td id="kills"></td>
+                    <td id="damage"></td>
+                    <td id="headshots"></td>
+                    <td id="revives"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container" id="content">
+    </div>
+</div>
+
+<a href="https://apex.tracker.gg/site-api"> Lien de l'API </a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
