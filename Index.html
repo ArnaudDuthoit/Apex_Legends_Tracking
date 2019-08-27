@@ -13,20 +13,13 @@
 </head>
 <body>
 
-<style>
-
-    body {
-        color: white;
-        background: #171717;
-
-    }
-
-</style>
-
 
 <div class="container">
 
-    <div class="container bg-dark text-white mt-4 px-4 py-4 rounded">
+    <h1 class="text-center pt-4 mt-4">FIND YOUR APEX LEGENDS STATS</h1>
+
+
+    <div class="container text-white mt-4 px-4 py-4 rounded search">
         <div class="form-group">
             <label for="player">Pseudo</label>
             <input type="text" class="form-control" id="player" placeholder="Pseudo">
@@ -43,25 +36,17 @@
         <button type="submit" class="btn btn-primary" id="submit" name="submit" value="Valider">Submit</button>
         <a href="https://apex.tracker.gg/site-api" class="btn btn-warning"  name="API" >Lien vers l'API</a>
 
-
     </div>
 
     <div id="contenu">
 
-    <div class="container text-center" id="player_overview">
-    </div>
-    <div class="container text-center" id="player_overview_stats">
-    </div>
-    <div class="container" id="content" style="padding:0">
-    </div>
+    <div class="container text-center" id="player_overview"> </div>
+    <div class="container text-center" id="player_overview_stats"> </div>
+    <div class="container" id="content" style="padding:0"></div>
 
     </div>
 
 </div>
-
-
-
-
 
 
 <script src="script.js"></script>
