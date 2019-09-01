@@ -52,11 +52,11 @@ function ajaxRequest(plateforme, player) {
 
                             $('#' + "grid" + element.id + "").append("<div class='trn-defstat'><div class='trn-defstat__name'>" + element.stats[item]['metadata']['name'] + "</div><div class='trn-defstat__value'>" + element.stats[item]['displayValue'] + "</div>");
 
-                            console.log(element.stats[item])
+                            //console.log(element.stats[item])
 
                         }
 
-                        console.log($('#' + element.id + ""));
+                        //console.log($('#' + element.id + ""));
 
                     });
 
